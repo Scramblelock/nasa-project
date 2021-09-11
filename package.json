@@ -1,0 +1,17 @@
+{
+  "name": "Nasa-Project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch": "yarn server & yarn client",
+    "server": "yarn --cwd ./server watch",
+    "client": "yarn --cwd ./client start",
+    "deploy": "yarn --cwd ./client build && yarn --cwd ./server start",
+    "deploy-cluster": "yarn --cwd ./client build && yarn --cwd ./server cluster",
+    "test": "yarn --cwd ./client test && yarn --cwd ./server test"
+  },
+  "dependencies": {
+    "axios": "^0.21.3"
+  }
+}
