@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:8000/v1';
+const API_URL = 'v1';
 
 // Load pawait lanets and return as JSON.
 async function httpGetPlanets() {
